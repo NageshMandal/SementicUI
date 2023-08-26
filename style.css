@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,400;1,700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #070707;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    height: 400px;
+    background-color: #8559e0;
+    border-radius: 40px;
+    margin: 5px;
+}
+section:nth-child(odd) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+section:nth-child(odd) div {
+    background-color: #ffcccb; /* Reddish color for odd sections */
+    height: 160px;
+    width: 400px;
+    display: inline-block;
+    margin: 0px 3px;
+    border-radius: 25px;
+}
+
+section:nth-child(even) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+section:nth-child(even) div {
+    background-color: #ffcccb; /* Reddish color for odd sections */
+    height: 160px;
+    width: 400px;
+    display: inline-block;
+    margin: 5px 3px;
+    border-radius: 25px;
+}
+main{
+    margin-top: 50px;
+}
+@media screen and (max-width: 768px) {
+    /* Adjust the styles for smaller screens here */
+
+    /* For example, you can stack the divs vertically */
+    section:nth-child(odd) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Remove the margin-right to reduce spacing between divs */
+    section:nth-child(odd) div {
+        margin-right: 0;
+        margin-bottom: 10px; /* Add some spacing between divs */
+    }
+    section:nth-child(even) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Remove the margin-right to reduce spacing between divs */
+    section:nth-child(even) div {
+        margin-right: 0;
+        margin-bottom: 10px; /* Add some spacing between divs */
+    }
+    section:first-of-type div:nth-child(1) {
+        display: none;
+    }
+    
+    section:first-of-type div:nth-child(2) {
+        display: none;
+    }
+    section:nth-of-type(3) div:nth-child(1) {
+        display: none;
+    }
+    section:nth-of-type(3) div:nth-child(3) {
+        display: none;
+    }
+    
+}
+/* Style the first section */
+section:first-of-type div:nth-child(1) {
+    background-color: #070707;
+}
+
+section:first-of-type div:nth-child(2) {
+    background-color: #070707;
+}
+
+section:first-of-type div:nth-child(3) {
+    background-color: #1d1d1d;
+    color: #eaeaea;
+}
+
+section:first-of-type div:nth-child(4) {
+    background-color: #909b9d;
+    color: #020105;
+}
+
+/* Style the second section */
+section:nth-of-type(2) div:nth-child(1) {
+    background-color: #e2765a;
+    color: #020105;
+}
+
+section:nth-of-type(2) div:nth-child(2) {
+    background-color: #e2765a;
+    color: #020105;
+}
+
+section:nth-of-type(2) div:nth-child(3) {
+    background-color: #e0d45a;
+    color: #020105;
+}
+
+section:nth-of-type(2) div:nth-child(4) {
+    background-color: #e2765a;
+    color: #020105;
+}
+
+/* Style the third section */
+section:nth-of-type(3) div:nth-child(1) {
+    background-color: #070707;
+}
+
+section:nth-of-type(3) div:nth-child(2) {
+    background-color: #5ebe74;
+}
+
+section:nth-of-type(3) div:nth-child(3) {
+    background-color: #070707;
+}
+
+section:nth-of-type(3) div:nth-child(4) {
+    background-color: #1d1d1d;
+}
+
+section > div > h1{
+    padding: 0px 15px;
+    font-size: 40px;
+}
+section > div > h3{
+    padding: 0px 15px;
+    font-size: 16px;
+  
+}
+/* Center align the nav bar and align h1 at the bottom */
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Style the navbar elements */
+nav{
+    border-radius: 50px;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px; /* Add space between navbar items */
+    font-size: 18px; /* Adjust the font size as needed */
+}
+
+nav ul li:first-child {
+    margin-left: 15px; /* Remove left margin for the first item */
+}
+
+nav ul li:last-child {
+    margin-right: 15px; /* Remove right margin for the last item */
+}
+
+/* Style the h1 element */
+header h1 {
+    font-size: 24px; /* Adjust the font size as needed */
+    margin-top: 10px; /* Add space between navbar and heading */
+}
